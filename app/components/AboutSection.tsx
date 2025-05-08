@@ -17,7 +17,7 @@ export default function AboutSection() {
 
         <div className="relative z-50">
           <h1 className="font-heading text-white text-5xl md:text-6xl font-semibold max-w-2xl mb-56">
-            We’re a passionate team building the future of bookkeeping
+            We&apos;re a passionate team building the future of bookkeeping
           </h1>
 
           <div className="border-b border-blue-500 pb-9 mb-32">
@@ -71,7 +71,7 @@ export default function AboutSection() {
                 passion for redefining the bookkeeping landscape, they embarked on a journey to create a cutting-edge SaaS platform.
               </p>
               <p className="text-white text-lg max-w-xl">
-                Four Points is more than a software; it's the culmination of years of industry insight and dedication to revolutionize the way
+                Four Points is more than a software; it&apos;s the culmination of years of industry insight and dedication to revolutionize the way
                 businesses manage their financial records. Built on the pillars of efficiency, accuracy, and collaboration, Vista sets a new
                 standard for bookkeeping solutions, empowering businesses to navigate their financial landscape with ease and confidence.
               </p>
@@ -84,7 +84,7 @@ export default function AboutSection() {
               Join our amazing global team
             </h2>
             <p className="text-center text-white text-opacity-70 mb-10 max-w-4xl mx-auto">
-              We're a small but strong team that enjoys having a lot of ownership and autonomy. We take pride in our work and come from places
+              We&apos;re a small but strong team that enjoys having a lot of ownership and autonomy. We take pride in our work and come from places
               such as Pipe, AngelList, and - to name a few.
             </p>
             <div className="text-center">
