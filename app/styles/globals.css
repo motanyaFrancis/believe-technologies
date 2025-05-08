@@ -2,22 +2,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #030712;
-  --font-color-body: #1e2238; /* Default text color for body */
-  --font-color-heading: #111111; /* Optional: slightly darker for headings */
+  --background: #030712;
+  --foreground: #ededed;
+  --font-color-body: #ededed;
+  --font-color-heading: #ffffff; /* Optional: slightly darker for headings */
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030712;
-    --foreground: #ededed;
-    --font-color-body: #ededed;
-    --font-color-heading: #ffffff;
-  }
-}
 
 body {
   background: var(--background);
