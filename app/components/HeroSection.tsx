@@ -4,13 +4,12 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
-import { ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [buttonColor, setButtonColor] = useState<string>('#ffffff'); // default white
-  const [textColor, setTextColor] = useState<string>('#1e3a8a'); // default blue
+  const [, setTextColor] = useState<string>('#1e3a8a'); // default blue
 
   useEffect(() => {
     const video = videoRef.current;

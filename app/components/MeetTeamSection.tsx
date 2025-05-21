@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image'
 import { FaStar } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
