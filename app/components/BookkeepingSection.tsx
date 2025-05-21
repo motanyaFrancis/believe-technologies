@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const BookkeepingSection: React.FC = () => {
   return (
-    <section className="bg-gray-950 py-28">
+    <section className="bg-slate-950 py-28">
       <div className="container max-w-6xl mx-auto px-6">
         <h1 className="font-heading text-white text-4xl md:text-5xl font-bold mb-4 text-center">
           Easy bookkeeping for your business
@@ -12,7 +12,7 @@ const BookkeepingSection: React.FC = () => {
         </p>
 
         {/* Section 1 */}
-        <div className="rounded-xl px-8 md:px-12 pt-14 pb-8 bg-gradient-to-b from-blue-950 via-blue-700 to-blue-400 mb-10">
+        <div className="rounded-xl px-8 md:px-12 pt-14 pb-8 bg-gradient-to-b from-slate-950 via-slate-700 to-blue-400 mb-10">
           <div className="flex flex-wrap items-center -m-4 mb-6">
             <div className="w-full lg:w-1/3 p-4">
               <h2 className="font-heading text-white text-4xl md:text-5xl font-bold max-w-xs mb-6">
@@ -73,10 +73,10 @@ const BookkeepingSection: React.FC = () => {
               />
             </div>
             <div className="w-full lg:w-1/3 p-4">
-              <h2 className="font-heading text-blue-950 text-4xl md:text-5xl font-bold max-w-xs mb-6">
+              <h2 className="font-heading text-slate-900 text-4xl md:text-5xl font-bold max-w-xs mb-6">
                 Multiple Accounts
               </h2>
-              <p className="text-blue-950 text-opacity-70 max-w-xs">
+              <p className="text-slate-950 text-opacity-70 max-w-xs">
                 Gain a comprehensive overview of all your accounts.
               </p>
             </div>
@@ -107,7 +107,7 @@ const BookkeepingSection: React.FC = () => {
         </div>
 
         {/* Section 4 */}
-        <div className="rounded-xl px-8 md:px-12 py-20 bg-gradient-to-t from-blue-950 via-blue-700 to-blue-400">
+        <div className="rounded-xl px-8 md:px-12 py-20 bg-gradient-to-t from-slate-950 via-slate-700 to-blue-600">
           <div className="flex flex-wrap items-center -m-4">
             <div className="w-full lg:w-2/3 p-4">
               <Image

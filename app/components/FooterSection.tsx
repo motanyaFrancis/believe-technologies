@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const FooterNewsletter: React.FC = () => {
   return (
-    <section className="bg-gradient-to-t from-darkBlue-900 via-blue-700 to-blue-400 overflow-hidden">
+    <section className="bg-gradient-to-t from-slate-900 via-blue-800 to-blue-600 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -m-4">
           {/* Newsletter Section */}
@@ -71,7 +71,7 @@ const FooterNewsletter: React.FC = () => {
                   <a href="#" className="inline-block">
                     <Image src="/images/logo-white.svg" alt="Logo" height={32} width={120} />
                   </a>
-                  <p className="text-white">© Believe Technologies. All rights reserved.</p>
+                  <p className="text-white">© 2025 Believe Technologies.</p>
                 </div>
               </div>
             </div>

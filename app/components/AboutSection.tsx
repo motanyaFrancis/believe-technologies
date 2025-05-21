@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className="bg-gray-950 pt-24 pb-28 relative overflow-hidden">
+    <section className="bg-slate-950 pt-24 pb-28 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <Image
           src="/images/about/illustration-blue2.svg"
@@ -20,8 +20,8 @@ export default function AboutSection() {
             We&apos;re a passionate team building the future of bookkeeping
           </h1>
 
-          <div className="border-b border-blue-500 pb-9 mb-32">
-            <div className="bg-gray-950">
+          <div className="border-b border-slate-400 pb-9 mb-32">
+            <div className="bg-slate-950">
               <div className="flex flex-wrap items-stretch -m-4">
                 <div className="w-full md:w-1/3 lg:w-1/2 p-4">
                   <div className="border-r border-transparent md:border-white md:border-opacity-10 flex flex-col justify-center h-full">
@@ -78,8 +78,8 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-gradient-to-t from-darkBlue-900 via-blue-700 to-blue-400 py-20 px-4">
-            <p className="uppercase text-center text-sweetBlue-300 text-xs mb-4">CAREERS</p>
+          <div className="rounded-3xl bg-gradient-to-t from-slate-900 via-blue-700 to-blue-400 py-20 px-4">
+            <p className="uppercase text-center text-slate-300 text-xs mb-4">CAREERS</p>
             <h2 className="font-heading text-white text-center text-4xl md:text-5xl font-bold mb-4">
               Join our amazing global team
             </h2>
@@ -94,7 +94,7 @@ export default function AboutSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-500 group-focus:to-white opacity-40 group-focus:opacity-20 rounded-full"></div>
                 <div className="relative z-50 flex items-center py-3 px-5 bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200">
-                  <p className="text-blueSecondary-900">Open positions</p>
+                  <p className="text-slate-900">Open positions</p>
                 </div>
               </a>
             </div>

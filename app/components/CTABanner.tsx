@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const CTABanner: React.FC = () => {
     return (
-        <section className="bg-gray-950 py-28">
+        <section className="bg-slate-950 py-28">
             <div className="container mx-auto px-4">
                 <div className="relative h-96 w-full rounded-3xl px-7 md:px-14 py-20 bg-gradient-to-b from-darkBlue-900 via-blue-700 to-blue-400 overflow-hidden">
 
                     {/* Text Content & CTA */}
                     <div className="relative z-50 flex flex-col justify-center items-start h-full">
                         <h1 className="font-heading text-white text-4xl md:text-5xl font-bold mb-10 max-w-md md:max-w-xl">
-                            Want to learn how to make templates like this one?
+                            Want to learn how to Keep up with current trends?
                         </h1>
 
                         {/* Gradient Button Wrapper */}
@@ -31,7 +31,7 @@ const CTABanner: React.FC = () => {
                                 rel="noopener noreferrer"
                                 className="text-blue-900 font-semibold group-hover:text-fuchsia-900 group-focus:text-fuchsia-900"
                             >
-                                View More
+                                Get Started
                             </Link>
                         </div>
                     </div>
