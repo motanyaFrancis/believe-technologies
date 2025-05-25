@@ -8,8 +8,8 @@ import Navbar from './Navbar';
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [buttonColor, setButtonColor] = useState<string>('#ffffff'); // default white
-  const [, setTextColor] = useState<string>('#1e3a8a'); // default blue
+  const [buttonColor, setButtonColor] = useState<string>('#ffffff');
+  const [, setTextColor] = useState<string>('#1e3a8a');
 
   useEffect(() => {
     const video = videoRef.current;
@@ -46,7 +46,7 @@ export default function HeroSection() {
     };
 
     const handleLoaded = () => {
-      extractColor(); // run once after load
+      extractColor();
       const interval = setInterval(extractColor, 2000);
       return () => clearInterval(interval);
     };
@@ -60,10 +60,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative text-white min-h-screen flex flex-col overflow-hidden">
-      {/* Hidden Canvas for Frame Sampling */}
       <canvas ref={canvasRef} width={64} height={36} className="hidden" />
 
-      {/* Video Background */}
       <video
         ref={videoRef}
         autoPlay
@@ -76,16 +74,12 @@ export default function HeroSection() {
         Your browser does not support the video tag.
       </video>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70 z-10" />
+      <div className="absolute inset-0 bg-black/80 z-10" />
 
-
-      {/* Navbar */}
       <div className="absolute top-0 left-0 w-full z-20">
         <Navbar />
       </div>
 
-      {/* Hero Content */}
       <motion.div
         className="flex flex-1 items-center justify-center relative z-10"
         initial={{ opacity: 0, y: 60 }}
@@ -96,36 +90,26 @@ export default function HeroSection() {
           <div className="lg:w-2/5 text-center lg:text-left">
             <span className="w-20 h-1 bg-white inline-block mb-8" />
             <h1 className="text-3xl sm:text-5xl font-medium leading-tight">
-              Stay ahead. Stay updated.
+              Smart. Scalable. Local.
               <span className="block text-4xl sm:text-6xl text-white/90 font-black uppercase">
-                Stay upgraded.
+                Believe in Technology.
               </span>
             </h1>
             <p className="mt-4 text-white text-xl sm:text-2xl">
-              We automate the boring so you can innovate the bold.
+              We empower African businesses with affordable ERP systems, payment automation, and digital integration.
             </p>
 
-            {/* Dynamic Buttons */}
             <div className="flex justify-center lg:justify-start mt-10 space-x-4">
-              {/* <Link href="#" className="group relative inline-block font-semibold rounded-full overflow-hidden">
-                <div
-                  className="relative z-50 flex items-center py-2 px-4 rounded-full transition duration-200"
-                  style={{ backgroundColor: buttonColor, color: textColor }}
-                >
-                  <p className="mr-2">Get started</p>
-                </div>
-              </Link> */}
-              <Link href="#" className="group relative inline-block font-semibold rounded-full overflow-hidden border-2"
+              <Link
+                href="/contact"
+                className="group relative inline-block font-semibold  overflow-hidden border-2"
                 style={{ borderColor: buttonColor }}
               >
                 <div
-                  className="relative z-50 flex items-center py-3 px-5 rounded-full transition duration-200"
-                  style={{
-                    backgroundColor: 'transparent',
-                    color: buttonColor,
-                  }}
+                  className="relative z-50 flex items-center py-3 px-5  transition duration-200"
+                  style={{ backgroundColor: 'transparent', color: buttonColor }}
                 >
-                  <p className="mr-2 uppercase">Get Started</p>
+                  <p className="mr-2 uppercase">Let's Talk</p>
                 </div>
               </Link>
             </div>
@@ -135,8 +119,6 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-
-      {/* Scroll Down Animation */}
       <div className="container arrowContainerP">
         <div className="arrowSection">
           <div className="arrowContainer slideDownDiv">
@@ -147,8 +129,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }

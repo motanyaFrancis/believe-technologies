@@ -12,7 +12,7 @@ const FooterNewsletter: React.FC = () => {
                 Subscribe to our newsletter
               </p>
               <form>
-                <div className="rounded-full bg-white/5  border border-white/10  p-1 flex items-center max-w-sm">
+                <div className=" bg-white/5  border border-white/10  p-1 flex items-center max-w-sm">
                   <input
                     className="flex-1 bg-transparent outline-none text-white placeholder-gray-300 pl-4"
                     type="email"
@@ -20,10 +20,10 @@ const FooterNewsletter: React.FC = () => {
                   />
                   <button
                     type="submit"
-                    className="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full"
+                    className="group relative inline-block p-0.5 font-semibold overflow-hidden "
                   >
-                    <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-500 opacity-40 group-focus:opacity-20 rounded-full" />
-                    <div className="relative z-50 flex items-center py-2 px-4 bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200">
+                    <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-500 opacity-40 group-focus:opacity-20" />
+                    <div className="relative z-50 flex items-center py-2 px-4 bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80  transition duration-200">
                       <p className="text-blue-950">Subscribe</p>
                     </div>
                   </button>
@@ -49,9 +49,9 @@ const FooterNewsletter: React.FC = () => {
                   <li>
                     <p className="font-heading text-white font-semibold">Company</p>
                   </li>
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">About</a></li>
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Blog</a></li>
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Contact</a></li>
+                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="/about">About</a></li>
+                  {/* <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Blog</a></li> */}
+                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="/contact">Contact</a></li>
                   <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Privacy Policy</a></li>
                 </ul>
               </div>
@@ -68,7 +68,7 @@ const FooterNewsletter: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-2/3 p-4">
               <div className="pl-4 py-11 pr-8 sm:border-r border-white/30 h-full">
                 <div className="flex items-center justify-between flex-wrap gap-4">
-                  <a href="#" className="inline-block">
+                  <a href="/" className="inline-block">
                     <Image src="/images/logo-white.svg" alt="Logo" height={32} width={120} />
                   </a>
                   <p className="text-white">© 2025 Believe Technologies.</p>
