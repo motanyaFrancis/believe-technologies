@@ -72,7 +72,7 @@ const services = [
       }
     ],
     slug: "web-development",
-    image: ""
+    image: "/images/services/web-development.jpg"
   },
   {
     title: "Payment Systems Integration & Automation",
@@ -164,4 +164,6 @@ const services = [
   }
 ];
 
-export default services;
+export async function getServices() {
+  return services;
+}

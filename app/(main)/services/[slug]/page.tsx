@@ -1,16 +1,37 @@
-import services from '@data/services';
+import { getServices } from '@data/services';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-interface ServiceDetailPageProps {
+type Props = {
   params: {
     slug: string;
   };
+};
+
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const services = await getServices();
+  const service = services.find((s) => s.slug === params.slug);
+
+  if (!service) return { title: 'Not Found' };
+
+  return {
+    title: `${service.title} | Believe Technologies`,
+    description: service.description,
+    openGraph: {
+      title: service.title,
+      description: service.description,
+      images: service.image ? [service.image] : [],
+    },
+  };
 }
 
-export default async function ServiceDetailPage({ params }: ServiceDetailPageProps) {
-  const service = services.find(s => s.slug === params.slug);
+// Page
+export default async function ServiceDetailPage({ params }: Props) {
+  const services = await getServices();
+  const service = services.find((s) => s.slug === params.slug);
 
   if (!service) return notFound();
 
@@ -33,6 +54,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
         </div>
       )}
 
+      {/* Breadcrumb and Back */}
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-sm text-gray-600">
         <nav className="flex items-center space-x-2">
           <Link href="/" className="hover:underline">Home</Link>
@@ -41,10 +63,12 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
           <span>/</span>
           <span className="text-gray-800 font-medium">{service.title}</span>
         </nav>
-        <Link href="/services" className="text-blue-600 font-semibold hover:underline">← Back to Solutions</Link>
+        <Link href="/services" className="text-blue-600 font-semibold hover:underline">
+          ← Back to Solutions
+        </Link>
       </div>
 
-      {/* Service details and features */}
+      {/* Service Features */}
       <section className="py-10 sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center">
