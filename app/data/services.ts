@@ -167,3 +167,9 @@ const services = [
 export async function getServices() {
   return services;
 }
+
+
+export async function getServiceBySlug(slug: string) {
+  const allServices = await getServices();
+  return allServices.find(service => service.slug === slug);
+}
