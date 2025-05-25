@@ -1,6 +1,5 @@
 import Hero from '@components/HeroSection';
 import Career from '@components/CareerSection';
-import CTA from '@components/CTABanner';
 import Footer from '@components/FooterSection';
 import FeaturesSection from "@components/FeaturesSection";
 import { CheckIcon, CodeBracketIcon, HeartIcon } from "@heroicons/react/24/outline";
