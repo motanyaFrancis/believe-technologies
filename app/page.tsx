@@ -45,7 +45,7 @@ export default function Home() {
         description="We help African businesses overcome inefficient processes with affordable, scalable, and localized digital systems."
         subDescription="Our tools bridge legacy systems to modern operations, boosting agility and competitiveness."
         buttonLabel="Discover Our Solutions"
-        buttonUrl="#"
+        buttonUrl="/services"
         foregroundImage="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/girl-drinking-coffee.jpg"
         backgroundImage="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/lines.svg"
       />
@@ -57,7 +57,7 @@ export default function Home() {
         secondaryImage="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/woman-working-on-laptop.jpg"
         circleOverlayImage="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/round-text.png"
         buttonLabel="Request a Demo"
-        buttonUrl="#"
+        buttonUrl="/contact"
         videoUrl="https://youtu.be/ZncigqbVlXQ"
       />
 
@@ -82,9 +82,9 @@ export default function Home() {
           { text: "On-site & Remote Support" },
         ]}
         primaryButtonLabel="Start Your Transformation"
-        primaryButtonUrl="#"
+        primaryButtonUrl="/contact"
         secondaryButtonLabel="See Full Services"
-        secondaryButtonUrl="#"
+        secondaryButtonUrl="/services"
         imageUrl="/images/services/erp-solutions.jpg"
       />
 
