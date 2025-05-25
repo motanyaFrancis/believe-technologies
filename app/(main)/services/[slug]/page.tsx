@@ -3,7 +3,13 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default async function ServiceDetailPage({ params }: { params: { slug: string } }) {
+interface ServiceDetailPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function ServiceDetailPage({ params }: ServiceDetailPageProps) {
   const service = services.find(s => s.slug === params.slug);
 
   if (!service) return notFound();
