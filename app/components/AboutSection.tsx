@@ -17,7 +17,7 @@ export default function AboutSection() {
 
         <div className="relative z-50">
           <h1 className="font-heading text-white text-5xl md:text-6xl font-semibold max-w-3xl mb-56">
-            We're a committed collective driving digital transformation across Africa
+            We&apos;re a committed collective driving digital transformation across Africa
           </h1>
 
           <div className="border-b border-slate-400 pb-9 mb-32">
