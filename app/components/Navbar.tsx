@@ -168,7 +168,11 @@ export default function Navbar() {
                             <ul className="space-y-2">
                               {section.links.map((link, i) => (
                                 <li key={i}>
-                                  <Link href={link.href} className="text-gray-800 text-sm hover:underline">
+                                  <Link
+                                    href={link.href}
+                                    className="text-gray-800 text-sm hover:underline"
+                                    onClick={() => setMobileNavOpen(false)} // <-- Close menu here
+                                  >
                                     {link.name}
                                   </Link>
                                 </li>
@@ -180,19 +184,24 @@ export default function Navbar() {
                     )}
                   </div>
                 ) : (
-                  <Link href={href || '#'} className="text-sm font-medium text-gray-900">
+                  <Link
+                    href={href || '#'}
+                    className="text-sm font-medium text-gray-900"
+                    onClick={() => setMobileNavOpen(false)} // <-- Close menu here
+                  >
                     {name}
                   </Link>
                 )}
               </li>
             ))}
           </ul>
-          <div className="text-center">
+
+          <div className="text-left">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-black hover:text-opacity-80 transition duration-200"
+              className="inline-flex items-left gap-2 text-black hover:text-opacity-80 transition duration-200"
             >
-              <span className="text-sm font-medium">Get In Touch</span>
+              <span className="text-sm font-medium">Let us Talk</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M5.5 3L10.5 8L5.5 13"

@@ -57,7 +57,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <span>/</span>
           <span className="text-gray-800 font-medium">{service.title}</span>
         </nav>
-        <Link href="/services" className="text-blue-600 font-semibold hover:underline">
+        <Link href="/services" className="text-blue-600 font-semibold hover:underline max-sm:hidden">
           ← Back to Solutions
         </Link>
       </div>
