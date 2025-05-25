@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FooterNewsletter: React.FC = () => {
   return (
@@ -40,19 +41,75 @@ const FooterNewsletter: React.FC = () => {
                   <li>
                     <p className="font-heading text-white font-semibold">Product</p>
                   </li>
-                  <li><a className="text-white hover:text-opacity-70 text transition duration-200" href="#">Features</a></li>
-                  <li><a className="text-white hover:text-opacity-70 text transition duration-200" href="#">How it works</a></li>
-                  <li><a className="text-white hover:text-opacity-70 text transition duration-200" href="#">Pricing</a></li>
-                  <li><a className="text-white hover:text-opacity-70 text transition duration-200" href="#">FAQs</a></li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 text transition duration-200"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 text transition duration-200"
+                    >
+                      How it works
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 text transition duration-200"
+                    >
+                      Pricing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 text transition duration-200"
+                    >
+                      FAQs
+                    </Link>
+                  </li>
                 </ul>
                 <ul className="flex flex-col gap-6">
                   <li>
                     <p className="font-heading text-white font-semibold">Company</p>
                   </li>
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="/about">About</a></li>
-                  {/* <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Blog</a></li> */}
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="/contact">Contact</a></li>
-                  <li><a className="text-white hover:text-opacity-70 transition duration-200" href="#">Privacy Policy</a></li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="text-white hover:text-opacity-70 transition duration-200"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 transition duration-200"
+                    >
+                      Blog
+                    </Link>
+                  </li> */}
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-white hover:text-opacity-70 transition duration-200"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-white hover:text-opacity-70 transition duration-200"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -68,9 +125,14 @@ const FooterNewsletter: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-2/3 p-4">
               <div className="pl-4 py-11 pr-8 sm:border-r border-white/30 h-full">
                 <div className="flex items-center justify-between flex-wrap gap-4">
-                  <a href="/" className="inline-block">
-                    <Image src="/images/logo-white.svg" alt="Logo" height={32} width={120} />
-                  </a>
+                  <Link href="/" className="inline-block">
+                    <Image
+                      src="/images/logo-white.svg"
+                      alt="Logo"
+                      height={32}
+                      width={120}
+                    />
+                  </Link>
                   <p className="text-white">© 2025 Believe Technologies.</p>
                 </div>
               </div>
@@ -80,18 +142,38 @@ const FooterNewsletter: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
               <div className="pl-8 xl:pl-28 pr-8 py-11">
                 <div className="flex flex-wrap gap-6">
-                  <a href="#" className="inline-block">
-                    <Image src="/images/logos/twitter-x-logo.svg" alt="Twitter" width={24} height={24} />
-                  </a>
-                  <a href="#" className="inline-block">
-                    <Image src="/images/logos/linkedin-logo.svg" alt="LinkedIn" width={24} height={24} />
-                  </a>
-                  <a href="#" className="inline-block">
-                    <Image src="/images/logos/instagram-logo.svg" alt="Instagram" width={24} height={24} />
-                  </a>
-                  <a href="#" className="inline-block">
-                    <Image src="/images/logos/facebook-logo.svg" alt="Facebook" width={24} height={24} />
-                  </a>
+                  <Link href="#" className="inline-block">
+                    <Image
+                      src="/images/logos/twitter-x-logo.svg"
+                      alt="Twitter"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                  <Link href="#" className="inline-block">
+                    <Image
+                      src="/images/logos/linkedin-logo.svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                  <Link href="#" className="inline-block">
+                    <Image
+                      src="/images/logos/instagram-logo.svg"
+                      alt="Instagram"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                  <Link href="#" className="inline-block">
+                    <Image
+                      src="/images/logos/facebook-logo.svg"
+                      alt="Facebook"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

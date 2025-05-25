@@ -109,7 +109,7 @@ export default function HeroSection() {
                   className="relative z-50 flex items-center py-3 px-5  transition duration-200"
                   style={{ backgroundColor: 'transparent', color: buttonColor }}
                 >
-                  <p className="mr-2 uppercase">Let's Talk</p>
+                  <p className="mr-2 uppercase">Let&apos;s Talk</p>
                 </div>
               </Link>
             </div>
