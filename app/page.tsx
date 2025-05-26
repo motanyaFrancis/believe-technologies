@@ -46,16 +46,16 @@ export default function Home() {
         subDescription="Our tools bridge legacy systems to modern operations, boosting agility and competitiveness."
         buttonLabel="Discover Our Solutions"
         buttonUrl="/services"
-        foregroundImage="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/girl-drinking-coffee.jpg"
+        foregroundImage="/images/KPI.jpg"
         backgroundImage="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/lines.svg"
       />
 
       <VisualFeatureSection
         title="Built for SMEs. Trusted by Enterprises."
         description="From QuickBooks integration to full ERP deployments — Believe Technologies enables fast, seamless digital transformation for all scales of business."
-        primaryImage="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/team-work.jpg"
-        secondaryImage="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/woman-working-on-laptop.jpg"
-        circleOverlayImage="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/round-text.png"
+        primaryImage="/images/smes-2.jpg"
+        secondaryImage="/images/smes-1.jpg"
+        circleOverlayImage=""
         buttonLabel="Request a Demo"
         buttonUrl="/contact"
         videoUrl="https://youtu.be/ZncigqbVlXQ"
@@ -85,7 +85,7 @@ export default function Home() {
         primaryButtonUrl="/contact"
         secondaryButtonLabel="See Full Services"
         secondaryButtonUrl="/services"
-        imageUrl="/images/services/erp-solutions.jpg"
+        imageUrl="/images/solution-2.jpg"
       />
 
       <Footer />

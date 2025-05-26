@@ -18,7 +18,7 @@ const volunteerOpportunities = [
 
 export default function CareerSection() {
   return (
-    <section className="bg-gradient-to-b from-gray-100 via-slate-200 to-slate-100 py-16">
+    <section className="bg-gradient-to-b from-gray-100 via-slate-200 to-slate-100 py-16 max-sm:py-0">
       <div className="max-w-7xl mx-auto">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-6 p-6 max-sm:p-0 max-sm:gap-0">
@@ -60,7 +60,7 @@ export default function CareerSection() {
           >
             <div className="relative w-full h-full">
               <Image
-                src="/images/careers/image_2.jpg"
+                src="/images/volunteers-1.jpg"
                 alt="Volunteer Opportunities"
                 fill
                 className="object-cover opacity-70 group-hover:opacity-90 transition"

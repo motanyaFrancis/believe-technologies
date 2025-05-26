@@ -37,7 +37,7 @@ export default function About() {
         primaryButtonUrl="#"
         secondaryButtonLabel="See Full Solutions"
         secondaryButtonUrl="#"
-        imageUrl="/images/services/erp-solutions.jpg"
+        imageUrl="/images/solution-2.jpg"
       />
     </>
   );

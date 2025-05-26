@@ -33,8 +33,8 @@ export default function AboutSection() {
                 </div>
                 <div className="w-full md:w-1/3 lg:w-1/4 p-4">
                   <div className="border-r border-transparent md:border-white md:border-opacity-10 flex flex-col justify-center h-full">
-                    <p className="text-white text-opacity-50 mb-2 text-center">Team Members</p>
-                    <p className="text-white text-5xl font-bold text-center">50+</p>
+                    <p className="text-white text-opacity-50 mb-2 text-center">Projects</p>
+                    <p className="text-white text-5xl font-bold text-center">10+</p>
                   </div>
                 </div>
                 <div className="w-full md:w-1/3 lg:w-1/4 p-4">
