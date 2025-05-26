@@ -43,7 +43,7 @@ const FooterNewsletter: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/services"
                       className="text-white hover:text-opacity-70 text transition duration-200"
                     >
                       Features
@@ -51,23 +51,23 @@ const FooterNewsletter: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/how-it-works"
                       className="text-white hover:text-opacity-70 text transition duration-200"
                     >
                       How it works
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="text-white hover:text-opacity-70 text transition duration-200"
                     >
                       Pricing
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      href="#"
+                      href="/faq"
                       className="text-white hover:text-opacity-70 text transition duration-200"
                     >
                       FAQs

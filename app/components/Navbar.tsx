@@ -84,8 +84,11 @@ export default function Navbar() {
           {navLinks.map(({ name, megaMenu }) => (
             hoveredDropdown === name && megaMenu && (
               <div key={name} className="animate-fadeInDown w-full text-white z-[997] relative shadow-md">
-                <div className="container mx-auto px-4 py-10 text-sm">
-                  <h2 className="text-xl font-bold mb-6">{name}</h2>
+                <div className="container mx-auto px-4 py-10 pb-24 text-sm">
+                  <div className="border-b border-white/50 mb-6 py-6">
+                  <h2 className="text-xl font-bold">{name} →</h2>
+                  </div>
+                  
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {megaMenu.map((section, index) => (
                       <div key={index}>
