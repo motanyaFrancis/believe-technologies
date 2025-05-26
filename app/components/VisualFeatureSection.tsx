@@ -33,7 +33,7 @@ const VisualFeatureSection: React.FC<VisualFeatureSectionProps> = ({
           <div className="relative grid grid-cols-2 gap-6 mt-10 md:mt-0">
             <div className="overflow-hidden aspect-w-3 aspect-h-4">
               <img
-                className="object-cover object-top origin-top scale-150"
+                className="object-cover bg-center object-top origin-top scale-100"
                 src={primaryImage}
                 alt="Primary"
               />
@@ -42,7 +42,7 @@ const VisualFeatureSection: React.FC<VisualFeatureSectionProps> = ({
             <div className="relative">
               <div className="h-full overflow-hidden aspect-w-3 aspect-h-4">
                 <img
-                  className="object-cover scale-150 lg:origin-bottom-right"
+                  className="object-cover bg-center scale-100 lg:origin-bottom-right"
                   src={secondaryImage}
                   alt="Secondary"
                 />
